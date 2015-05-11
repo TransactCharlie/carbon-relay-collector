@@ -74,8 +74,8 @@ class CollectorProtocol(Protocol):
             unpickled = pickle.loads(data)
 
             for d in unpickled:
-                metric_path = d[0]
-                print metric_path
+                metric_path = d[0].split('.')[0]
+
                 # get the global stats dict
                 STATS[metric_path]+=1
 
