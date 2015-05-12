@@ -1,0 +1,9 @@
+# Config file for Carbon Relay Collector
+
+listen_pickle_port: 6006
+listen_http_report_port: 8086
+
+report_graphite_host: "localhost"
+report_graphite_port: 2003
+report_send_interval: 60
+
